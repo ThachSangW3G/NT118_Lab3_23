@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvQLSV"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="QUẢN LÝ SINH VIÊN"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:background="#03DAC5"
+        android:textColor="#F44336"
+        android:textFontWeight="@integer/material_motion_duration_long_2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_centerHorizontal="true"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvMSSV"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="MSSV"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_below="@id/tvQLSV"
+        />
+
+    <EditText
+        android:id="@+id/editMSSV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvQLSV"
+        android:layout_toRightOf="@id/tvMSSV"
+        />
+
+    <TextView
+        android:id="@+id/tvHoTen"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Họ tên"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_below="@id/tvMSSV"
+        />
+
+    <EditText
+        android:id="@+id/editHoTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvMSSV"
+        android:layout_toRightOf="@id/tvHoTen"
+        />
+
+    <TextView
+        android:id="@+id/tvLop"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="Lớp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:textSize="20dp"
+        android:layout_below="@id/tvHoTen"
+        />
+
+    <EditText
+        android:id="@+id/editLop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvHoTen"
+        android:layout_toRightOf="@id/tvLop"
+
+        />
+
+    <Button
+        android:id="@+id/btnInsert"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tvLop"
+        android:text="INSERT"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/tvLop"
+        android:text="DELETE"
+        android:textSize="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnInsert"
+        android:text="UPDATE"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+    <Button
+        android:id="@+id/btnQuery"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnDelete"
+        android:text="QUERY"
+        android:textSize="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_alignParentRight="true"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleSV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/btnUpdate"
+        />
+
+
+</RelativeLayout>

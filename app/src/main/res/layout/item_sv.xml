@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/cardView"
+    >
+
+    <TextView
+        android:id="@+id/itemSV"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="#23ADE8"
+        android:text="Thach Sang"
+        android:textSize="20dp"
+        android:paddingHorizontal="10dp"
+        />
+
+</RelativeLayout>
